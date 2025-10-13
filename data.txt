@@ -70,3 +70,4 @@ Commit date: 2025-09-18T16:04:53 +0530 - Message: update readme
 Commit date: 2025-09-19T14:59:50 +0530 - Message: improve structure
 Commit date: 2025-09-28T20:27:02 +0530 - Message: update notes
 Commit date: 2025-10-09T10:23:22 +0530 - Message: cleanup whitespace
+Commit date: 2025-10-13T23:12:16 +0530 - Message: tweak config
