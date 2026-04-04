@@ -1,26 +1,62 @@
-# Byte-compiled / optimized / DLL files
+# =============================================
+# LENS — .gitignore
+# Excludes sensitive, generated & runtime files
+# =============================================
+
+# --- SECRETS & ENVIRONMENT ---
+.env
+.env.*
+!.env.example
+
+# --- Python cache ---
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
-# C extensions
-*.so
-
-# Distribution / packaging
-# ... existing .gitignore contents ...
-
-# Environment variables
-.env
+# --- Virtual environments ---
 .venv/
-env/
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
 
-# Logs
-logs/
-*.log
+# --- Distribution / packaging ---
+dist/
+build/
+*.egg-info/
+*.egg
 
-# Docker
+# --- Runtime data & uploads ---
+uploads/
+processed_images/
+screenshots/
+chroma_db/
+*.log
+logs/
+
+# --- Docker overrides ---
 docker-compose.override.yml
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Antigravity / Agent internals ---
+.agent/
+.qodo/
+.ralphy/
+
+# --- Temp / scratch ---
+*.tmp
+*.bak
+
+# --- Implementation plans (internal planning docs) ---
+implementation_plan.md
