@@ -1,0 +1,62 @@
+# =============================================
+# LENS — .gitignore
+# Excludes sensitive, generated & runtime files
+# =============================================
+
+# --- SECRETS & ENVIRONMENT ---
+.env
+.env.*
+!.env.example
+
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Distribution / packaging ---
+dist/
+build/
+*.egg-info/
+*.egg
+
+# --- Runtime data & uploads ---
+uploads/
+processed_images/
+screenshots/
+chroma_db/
+*.log
+logs/
+
+# --- Docker overrides ---
+docker-compose.override.yml
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Antigravity / Agent internals ---
+.agent/
+.qodo/
+.ralphy/
+
+# --- Temp / scratch ---
+*.tmp
+*.bak
+
+# --- Implementation plans (internal planning docs) ---
+implementation_plan.md
